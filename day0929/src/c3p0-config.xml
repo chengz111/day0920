@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+  <named-config name="jdbcApp">
+    <!-- JDBC连接 的属性 -->
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+    <property name="jdbcUrl">jdbc:mysql://localhost:3306/java12</property>
+    <property name="user">root</property>
+    <property name="password">123456</property>
+    
+  	<!-- 连接池的基本属性 -->
+  	<!-- 每次请求数据库连接的个数 -->
+    <property name="acquireIncrement">50</property>
+    <!-- 初始化连接池大小 -->
+    <property name="initialPoolSize">100</property>
+    <!-- 连接池最小值 -->
+    <property name="minPoolSize">50</property>
+    <!-- 连接池最大值 -->
+    <property name="maxPoolSize">1000</property>
+  </named-config>
+</c3p0-config>
